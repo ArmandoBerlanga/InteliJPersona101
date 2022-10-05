@@ -38,13 +38,13 @@ public class PersonaList {
         if(file.exists()) file.delete();
 
         Gson gson = new GsonBuilder().setPrettyPrinting().create();
-        JsonElement je = gson.fromJson(makeJSON(), JsonElement.class);
-        String prettyJsonString = gson.toJson(je);
+        JsonElement jsonObj = gson.fromJson(makeJSON(), JsonElement.class);
+        String json = gson.toJson(jsonObj);
 
         FileWriter writer = null;
         try {
             writer = new FileWriter(file);
-            writer.write(prettyJsonString);
+            writer.write(json);
             writer.close();
 
             System.out.println("\nJSON file created successfully at " + path + "\n");
