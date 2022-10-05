@@ -5,6 +5,11 @@ import java.io.FileWriter;
 import java.util.ArrayList;
 import java.util.List;
 
+import com.fasterxml.jackson.core.JsonParser;
+import com.google.gson.Gson;
+import com.google.gson.GsonBuilder;
+import com.google.gson.JsonElement;
+
 public class PersonaList {
     List<Persona> value;
 
@@ -22,7 +27,7 @@ public class PersonaList {
         for(Persona p : value) json += p + ",";
         json = json.substring(0, json.length() - 1);
 
-        return "{ \"personas\": [" + json + "] }";
+        return "[" + json + "]";
     }
 
     public void createJSONFile(String fileName) {
@@ -32,10 +37,14 @@ public class PersonaList {
         File file = new File(path);
         if(file.exists()) file.delete();
 
+        Gson gson = new GsonBuilder().setPrettyPrinting().create();
+        JsonElement jsonObj = gson.fromJson(makeJSON(), JsonElement.class);
+        String json = gson.toJson(jsonObj);
+
         FileWriter writer = null;
         try {
             writer = new FileWriter(file);
-            writer.write(makeJSON());
+            writer.write(json);
             writer.close();
 
             System.out.println("\nJSON file created successfully at " + path + "\n");
