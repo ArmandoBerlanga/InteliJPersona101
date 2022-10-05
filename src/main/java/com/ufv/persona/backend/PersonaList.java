@@ -28,7 +28,8 @@ public class PersonaList {
     private String makeJSON() {
         String json = "";
 
-        for(Persona p : this.value) json += p + ",";
+        for (Persona p : this.value)
+            json += p + ",";
         json = json.substring(0, json.length() - 1);
 
         return "[" + json + "]";
@@ -38,7 +39,8 @@ public class PersonaList {
         String path = System.getProperty("user.dir") + "/src/" + fileName + ".json";
 
         File file = new File(path);
-        if(file.exists()) file.delete();
+        if (file.exists())
+            file.delete();
 
         Gson gson = new GsonBuilder().setPrettyPrinting().create();
         JsonElement jsonObj = gson.fromJson(makeJSON(), JsonElement.class);
@@ -66,7 +68,8 @@ public class PersonaList {
             System.out.println("\nError reading JSON file\n");
         }
 
-        if(content == null) return;
+        if (content == null)
+            return;
 
         Persona[] payload = null;
         ObjectMapper mapper = new ObjectMapper();

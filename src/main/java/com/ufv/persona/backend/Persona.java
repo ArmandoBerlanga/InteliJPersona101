@@ -62,12 +62,12 @@ public class Persona {
     @Override
     public String toString() {
         return "{" +
-            "\"nombre\":\"" + nombre + '\"' +
-            ", \"apellido\":\"" + apellido + '\"' +
-            ", \"edad\":" + edad +
-            ", \"dni\":\"" + dni + '\"' +
-            ", \"sexo\":\"" + sexo + '\"' +
-        '}';
+                "\"nombre\":\"" + nombre + '\"' +
+                ", \"apellido\":\"" + apellido + '\"' +
+                ", \"edad\":" + edad +
+                ", \"dni\":\"" + dni + '\"' +
+                ", \"sexo\":\"" + sexo + '\"' +
+                '}';
     }
-    
+
 }
