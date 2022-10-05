@@ -25,7 +25,7 @@ public class PersonaList {
     private String makeJSON() {
         String json = "";
 
-        for(Persona p : value) json += p + ",";
+        for(Persona p : this.value) json += p + ",";
         json = json.substring(0, json.length() - 1);
 
         return "[" + json + "]";
