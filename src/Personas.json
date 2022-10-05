@@ -40,5 +40,12 @@
     "edad": 23,
     "dni": "G271234",
     "sexo": "MUJER"
+  },
+  {
+    "nombre": "Lorenzo",
+    "apellido": "Italiano",
+    "edad": 20,
+    "dni": "12345678A",
+    "sexo": "HOMBRE"
   }
 ]

@@ -1,19 +1,11 @@
 package com.ufv.persona.backend;
 
-import java.util.Arrays;
-
 public class Main {
     public static void main(String[] args) {
         PersonaList ppl = new PersonaList();
-
-        ppl.value.addAll(Arrays.asList(
-            new Persona("José", "Berlanga", 12, "G271234", Sexo.HOMBRE),
-            new Persona("María", "García", 23, "G271234", Sexo.OTRO),
-            new Persona("Juan", "García", 23, "G271234", Sexo.HOMBRE),
-            new Persona("María", "García", 23, "G271234", Sexo.PREFIERO_NO_DECIRLO),
-            new Persona("María", "García", 23, "G271234", Sexo.MUJER),
-            new Persona("María", "García", 23, "G271234", Sexo.MUJER)
-        ));
+        
+        ppl.readJSONFile("Personas");
+        ppl.value.add(new Persona("Lorenzo", "Italiano", 20, "12345678A", Sexo.HOMBRE));
 
         ppl.createJSONFile("Personas");
     }
