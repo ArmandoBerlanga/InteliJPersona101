@@ -1,51 +1,51 @@
 [
-    {
-        "nombre": "José",
-        "apellido": "Berlanga",
-        "edad": 12,
-        "dni": "G271234",
-        "sexo": "HOMBRE"
-    },
-    {
-        "nombre": "María",
-        "apellido": "García",
-        "edad": 23,
-        "dni": "G271234",
-        "sexo": "OTRO"
-    },
-    {
-        "nombre": "Juan",
-        "apellido": "García",
-        "edad": 23,
-        "dni": "G271234",
-        "sexo": "HOMBRE"
-    },
-    {
-        "nombre": "María",
-        "apellido": "García",
-        "edad": 23,
-        "dni": "G271234",
-        "sexo": "PREFIERO_NO_DECIRLO"
-    },
-    {
-        "nombre": "María",
-        "apellido": "García",
-        "edad": 23,
-        "dni": "G271234",
-        "sexo": "MUJER"
-    },
-    {
-        "nombre": "María",
-        "apellido": "García",
-        "edad": 23,
-        "dni": "G271234",
-        "sexo": "MUJER"
-    },
-    {
-        "nombre": "Lorenzo",
-        "apellido": "Italiano",
-        "edad": 20,
-        "dni": "12345678A",
-        "sexo": "HOMBRE"
-    }
+  {
+    "nombre": "José",
+    "apellido": "Berlanga",
+    "edad": 12,
+    "dni": "G271234",
+    "sexo": "HOMBRE"
+  },
+  {
+    "nombre": "María",
+    "apellido": "García",
+    "edad": 23,
+    "dni": "G271234",
+    "sexo": "OTRO"
+  },
+  {
+    "nombre": "Juan",
+    "apellido": "García",
+    "edad": 23,
+    "dni": "G271234",
+    "sexo": "HOMBRE"
+  },
+  {
+    "nombre": "María",
+    "apellido": "García",
+    "edad": 23,
+    "dni": "G271234",
+    "sexo": "PREFIERO_NO_DECIRLO"
+  },
+  {
+    "nombre": "María",
+    "apellido": "García",
+    "edad": 23,
+    "dni": "G271234",
+    "sexo": "MUJER"
+  },
+  {
+    "nombre": "María",
+    "apellido": "García",
+    "edad": 23,
+    "dni": "G271234",
+    "sexo": "MUJER"
+  },
+  {
+    "nombre": "Lorenzo",
+    "apellido": "Italiano",
+    "edad": 20,
+    "dni": "12345678A",
+    "sexo": "HOMBRE"
+  }
 ]
