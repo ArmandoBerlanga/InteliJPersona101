@@ -1,0 +1,23 @@
+[
+  {
+    "nombre": "Armando",
+    "apellido": "Berlanga",
+    "edad": 12,
+    "dni": "G2712323",
+    "sexo": "HOMBRE"
+  },
+  {
+    "nombre": "Juan",
+    "apellido": "Perez",
+    "edad": 23,
+    "dni": "G2712324",
+    "sexo": "HOMBRE"
+  },
+  {
+    "nombre": "Maria",
+    "apellido": "Lopez",
+    "edad": 34,
+    "dni": "G2712325",
+    "sexo": "MUJER"
+  }
+]
