@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE email [
+    <!ELEMENT email (destinatarios, asunto, cuerpo, attachments, delay?, ejemplo_empty)>
+    <!ELEMENT destinatarios (normal+, cco*)>
+        <!ELEMENT normal (nombre, tipo_correo, correo)>
+        <!ELEMENT cco (nombre, tipo_correo, correo)>
+            <!ELEMENT nombre (#PCDATA)>
+            <!ELEMENT tipo_correo (#PCDATA)>
+            <!ELEMENT correo (#PCDATA)>
+    <!ELEMENT asunto (#PCDATA)>
+        <!ATTLIST asunto importante CDATA "importante"> <!-- Por dentro aunque no se ponga se añade -->
+        <!ATTLIST asunto requerido CDATA #REQUIRED> <!-- Siempre tiene que ir -->
+        <!ATTLIST gramtica requerido CDATA #IMPLIED> <!-- Siempre tiene que ir -->
+    <!ELEMENT cuerpo (#PCDATA)>
+    <!ELEMENT attachments (attachment*)>
+        <!ELEMENT attachment (file_type, file_name)>
+            <!ELEMENT file_type (#PCDATA)>
+            <!ELEMENT file_name (#PCDATA)>
+    <!ELEMENT delay (#PCDATA)>
+    <!ELEMENT ejemplo_empty EMPTY>
+]>
+
+<email>
+    <destinatarios>
+        <normal>
+            <nombre>Jose</nombre>
+            <tipo_correo>Educativo</tipo_correo>
+            <correo>Jose.berlangam@ude.edu</correo>
+        </normal>
+        <cco>
+            <nombre>Armando</nombre>
+            <tipo_correo>Personal</tipo_correo>
+            <correo>Armandoberlanga@gmail.com</correo>
+        </cco>
+    </destinatarios>
+
+    <asunto requerido="true">Soy un asunto yai</asunto>
+
+    <cuerpo>Soy un cuerpo yai x2</cuerpo>
+
+    <attachments>
+        <attachment>
+            <file_type>video</file_type>
+            <file_name>MiVideo.video</file_name>
+        </attachment>
+    </attachments>
+
+    <delay>2</delay>
+
+    <ejemplo_empty></ejemplo_empty>
+</email>
